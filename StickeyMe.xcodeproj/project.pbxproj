@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		459DFBECAACCBFFD1AE89DFD /* Pods_StickeyMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD93352BF9E4315E2565271 /* Pods_StickeyMe.framework */; };
+		9124195D1CB70B54008E4C61 /* SMImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9124195C1CB70B53008E4C61 /* SMImageFetcher.swift */; };
+		912419631CB9374B008E4C61 /* SMImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912419621CB9374B008E4C61 /* SMImageViewController.swift */; };
+		91265C351CB0C02600AE7828 /* SMImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91265C341CB0C02600AE7828 /* SMImageSelectionViewController.swift */; };
+		914A22A41C8585E0007FBD03 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 914A22A31C8585E0007FBD03 /* MBProgressHUD.m */; };
+		914A22A71C85BE99007FBD03 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914A22A61C85BE99007FBD03 /* UIImage+OpenCV.mm */; };
+		914A22A91C85C194007FBD03 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914A22A81C85C194007FBD03 /* opencv2.framework */; };
+		914A22B41C870447007FBD03 /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914A22B31C870447007FBD03 /* CVWrapper.mm */; };
+		914A22B71C870683007FBD03 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914A22B61C870683007FBD03 /* AVFoundation.framework */; };
+		914A22B91C87068A007FBD03 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914A22B81C87068A007FBD03 /* AssetsLibrary.framework */; };
+		914A22BB1C87068E007FBD03 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914A22BA1C87068E007FBD03 /* Photos.framework */; };
+		914A22BD1C870698007FBD03 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914A22BC1C870698007FBD03 /* CoreMedia.framework */; };
+		914A22C01C87089F007FBD03 /* CVSquares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 914A22BE1C87089E007FBD03 /* CVSquares.cpp */; };
+		9163A38F1CC404BA002F3DC6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9163A38E1CC404BA002F3DC6 /* MessageUI.framework */; };
+		917D91661C806D7B006199E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D91651C806D7B006199E4 /* AppDelegate.swift */; };
+		917D91681C806D7B006199E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D91671C806D7B006199E4 /* ViewController.swift */; };
+		917D916B1C806D7B006199E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D91691C806D7B006199E4 /* Main.storyboard */; };
+		917D916D1C806D7B006199E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 917D916C1C806D7B006199E4 /* Assets.xcassets */; };
+		917D91701C806D7B006199E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917D916E1C806D7B006199E4 /* LaunchScreen.storyboard */; };
+		917D917B1C806D7C006199E4 /* StickeyMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917D917A1C806D7C006199E4 /* StickeyMeTests.swift */; };
+		919EEF121CC71A700045A524 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919EEF101CC71A700045A524 /* Fabric.framework */; };
+		919EEF131CC71A700045A524 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919EEF111CC71A700045A524 /* Crashlytics.framework */; };
+		91C4A45E1C969B1300E105D6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C4A45D1C969B1300E105D6 /* CoreFoundation.framework */; };
+		91C4A4601C96B01900E105D6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C4A45F1C96B01900E105D6 /* CoreVideo.framework */; };
+		91C64DF21CA12EEF003BCB79 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DF11CA12EEF003BCB79 /* libc++.tbd */; };
+		91C64DF41CA12F1E003BCB79 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DF31CA12F1E003BCB79 /* Accelerate.framework */; };
+		91C64DF61CA12F2C003BCB79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DF51CA12F2C003BCB79 /* CoreGraphics.framework */; };
+		91C64DF81CA12F33003BCB79 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DF71CA12F33003BCB79 /* CoreImage.framework */; };
+		91C64DFA1CA12F3D003BCB79 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DF91CA12F3D003BCB79 /* QuartzCore.framework */; };
+		91C64DFC1CA12F45003BCB79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DFB1CA12F45003BCB79 /* UIKit.framework */; };
+		91C64DFE1CA12F49003BCB79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64DFD1CA12F49003BCB79 /* Foundation.framework */; };
+		91C64E041CA18944003BCB79 /* DNCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C64E031CA18944003BCB79 /* DNCollectionViewCell.swift */; };
+		91C64E071CA24721003BCB79 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C64E061CA24720003BCB79 /* MobileCoreServices.framework */; };
+		91D8A1DE1CBE5F7500F7F8BB /* SMImageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D8A1DD1CBE5F7500F7F8BB /* SMImageObject.swift */; };
+		91D8A1EA1CBF4AD500F7F8BB /* wooden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91D8A1E91CBF4AD500F7F8BB /* wooden.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		917D91771C806D7C006199E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 917D915A1C806D7B006199E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 917D91611C806D7B006199E4;
+			remoteInfo = StickeyMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		87D9A911CDAC797440CAA713 /* Pods-StickeyMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickeyMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StickeyMe/Pods-StickeyMe.debug.xcconfig"; sourceTree = "<group>"; };
+		9124195C1CB70B53008E4C61 /* SMImageFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMImageFetcher.swift; sourceTree = "<group>"; };
+		912419621CB9374B008E4C61 /* SMImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMImageViewController.swift; sourceTree = "<group>"; };
+		91265C341CB0C02600AE7828 /* SMImageSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMImageSelectionViewController.swift; sourceTree = "<group>"; };
+		914A22A11C8585DF007FBD03 /* StickeyMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StickeyMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		914A22A21C8585E0007FBD03 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		914A22A31C8585E0007FBD03 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		914A22A51C85BE99007FBD03 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		914A22A61C85BE99007FBD03 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		914A22A81C85C194007FBD03 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		914A22B21C870447007FBD03 /* CVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
+		914A22B31C870447007FBD03 /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		914A22B51C870603007FBD03 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		914A22B61C870683007FBD03 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		914A22B81C87068A007FBD03 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		914A22BA1C87068E007FBD03 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		914A22BC1C870698007FBD03 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		914A22BE1C87089E007FBD03 /* CVSquares.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVSquares.cpp; sourceTree = "<group>"; };
+		914A22BF1C87089E007FBD03 /* CVSquares.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CVSquares.hpp; sourceTree = "<group>"; };
+		9163A38E1CC404BA002F3DC6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		917D91621C806D7B006199E4 /* StickeyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickeyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		917D91651C806D7B006199E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		917D91671C806D7B006199E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		917D916A1C806D7B006199E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		917D916C1C806D7B006199E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		917D916F1C806D7B006199E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		917D91711C806D7B006199E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		917D91761C806D7C006199E4 /* StickeyMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickeyMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		917D917A1C806D7C006199E4 /* StickeyMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickeyMeTests.swift; sourceTree = "<group>"; };
+		917D917C1C806D7C006199E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919EEF101CC71A700045A524 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		919EEF111CC71A700045A524 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		91C4A45D1C969B1300E105D6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		91C4A45F1C96B01900E105D6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		91C64DF11CA12EEF003BCB79 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		91C64DF31CA12F1E003BCB79 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		91C64DF51CA12F2C003BCB79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91C64DF71CA12F33003BCB79 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		91C64DF91CA12F3D003BCB79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		91C64DFB1CA12F45003BCB79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91C64DFD1CA12F49003BCB79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91C64E031CA18944003BCB79 /* DNCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCollectionViewCell.swift; sourceTree = "<group>"; };
+		91C64E061CA24720003BCB79 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		91D8A1DD1CBE5F7500F7F8BB /* SMImageObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMImageObject.swift; path = ../SMImageObject.swift; sourceTree = "<group>"; };
+		91D8A1E91CBF4AD500F7F8BB /* wooden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wooden.jpg; sourceTree = "<group>"; };
+		9FB224996842D51999327111 /* Pods-StickeyMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickeyMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-StickeyMe/Pods-StickeyMe.release.xcconfig"; sourceTree = "<group>"; };
+		CFD93352BF9E4315E2565271 /* Pods_StickeyMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickeyMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		917D915F1C806D7B006199E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9163A38F1CC404BA002F3DC6 /* MessageUI.framework in Frameworks */,
+				91C64E071CA24721003BCB79 /* MobileCoreServices.framework in Frameworks */,
+				919EEF131CC71A700045A524 /* Crashlytics.framework in Frameworks */,
+				91C64DFE1CA12F49003BCB79 /* Foundation.framework in Frameworks */,
+				91C64DFC1CA12F45003BCB79 /* UIKit.framework in Frameworks */,
+				91C64DFA1CA12F3D003BCB79 /* QuartzCore.framework in Frameworks */,
+				919EEF121CC71A700045A524 /* Fabric.framework in Frameworks */,
+				91C64DF81CA12F33003BCB79 /* CoreImage.framework in Frameworks */,
+				91C64DF61CA12F2C003BCB79 /* CoreGraphics.framework in Frameworks */,
+				91C64DF41CA12F1E003BCB79 /* Accelerate.framework in Frameworks */,
+				91C64DF21CA12EEF003BCB79 /* libc++.tbd in Frameworks */,
+				91C4A4601C96B01900E105D6 /* CoreVideo.framework in Frameworks */,
+				91C4A45E1C969B1300E105D6 /* CoreFoundation.framework in Frameworks */,
+				914A22BD1C870698007FBD03 /* CoreMedia.framework in Frameworks */,
+				914A22BB1C87068E007FBD03 /* Photos.framework in Frameworks */,
+				914A22B91C87068A007FBD03 /* AssetsLibrary.framework in Frameworks */,
+				914A22B71C870683007FBD03 /* AVFoundation.framework in Frameworks */,
+				914A22A91C85C194007FBD03 /* opencv2.framework in Frameworks */,
+				459DFBECAACCBFFD1AE89DFD /* Pods_StickeyMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917D91731C806D7C006199E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914A22A01C858105007FBD03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919EEF101CC71A700045A524 /* Fabric.framework */,
+				919EEF111CC71A700045A524 /* Crashlytics.framework */,
+				9163A38E1CC404BA002F3DC6 /* MessageUI.framework */,
+				91C64E061CA24720003BCB79 /* MobileCoreServices.framework */,
+				91C64DFD1CA12F49003BCB79 /* Foundation.framework */,
+				91C64DFB1CA12F45003BCB79 /* UIKit.framework */,
+				91C64DF91CA12F3D003BCB79 /* QuartzCore.framework */,
+				91C64DF71CA12F33003BCB79 /* CoreImage.framework */,
+				91C64DF51CA12F2C003BCB79 /* CoreGraphics.framework */,
+				91C64DF31CA12F1E003BCB79 /* Accelerate.framework */,
+				91C64DF11CA12EEF003BCB79 /* libc++.tbd */,
+				91C4A45F1C96B01900E105D6 /* CoreVideo.framework */,
+				91C4A45D1C969B1300E105D6 /* CoreFoundation.framework */,
+				914A22BC1C870698007FBD03 /* CoreMedia.framework */,
+				914A22BA1C87068E007FBD03 /* Photos.framework */,
+				914A22B81C87068A007FBD03 /* AssetsLibrary.framework */,
+				914A22B61C870683007FBD03 /* AVFoundation.framework */,
+				914A22A81C85C194007FBD03 /* opencv2.framework */,
+				CFD93352BF9E4315E2565271 /* Pods_StickeyMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		914A22C41C87135A007FBD03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91D8A1E91CBF4AD500F7F8BB /* wooden.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		917D91591C806D7B006199E4 = {
+			isa = PBXGroup;
+			children = (
+				914A22C41C87135A007FBD03 /* Resources */,
+				914A22A01C858105007FBD03 /* Frameworks */,
+				917D91641C806D7B006199E4 /* StickeyMe */,
+				917D91791C806D7C006199E4 /* StickeyMeTests */,
+				917D91631C806D7B006199E4 /* Products */,
+				9199199492E633FE0E2ABBB8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		917D91631C806D7B006199E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				917D91621C806D7B006199E4 /* StickeyMe.app */,
+				917D91761C806D7C006199E4 /* StickeyMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		917D91641C806D7B006199E4 /* StickeyMe */ = {
+			isa = PBXGroup;
+			children = (
+				91D8A1DD1CBE5F7500F7F8BB /* SMImageObject.swift */,
+				914A22A21C8585E0007FBD03 /* MBProgressHUD.h */,
+				914A22A31C8585E0007FBD03 /* MBProgressHUD.m */,
+				917D91651C806D7B006199E4 /* AppDelegate.swift */,
+				917D91671C806D7B006199E4 /* ViewController.swift */,
+				917D91691C806D7B006199E4 /* Main.storyboard */,
+				917D916C1C806D7B006199E4 /* Assets.xcassets */,
+				917D916E1C806D7B006199E4 /* LaunchScreen.storyboard */,
+				917D91711C806D7B006199E4 /* Info.plist */,
+				914A22A11C8585DF007FBD03 /* StickeyMe-Bridging-Header.h */,
+				914A22A51C85BE99007FBD03 /* UIImage+OpenCV.h */,
+				914A22A61C85BE99007FBD03 /* UIImage+OpenCV.mm */,
+				914A22B21C870447007FBD03 /* CVWrapper.h */,
+				914A22B31C870447007FBD03 /* CVWrapper.mm */,
+				914A22B51C870603007FBD03 /* PrefixHeader.pch */,
+				914A22BE1C87089E007FBD03 /* CVSquares.cpp */,
+				914A22BF1C87089E007FBD03 /* CVSquares.hpp */,
+				91C64E031CA18944003BCB79 /* DNCollectionViewCell.swift */,
+				91265C341CB0C02600AE7828 /* SMImageSelectionViewController.swift */,
+				9124195C1CB70B53008E4C61 /* SMImageFetcher.swift */,
+				912419621CB9374B008E4C61 /* SMImageViewController.swift */,
+			);
+			path = StickeyMe;
+			sourceTree = "<group>";
+		};
+		917D91791C806D7C006199E4 /* StickeyMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				917D917A1C806D7C006199E4 /* StickeyMeTests.swift */,
+				917D917C1C806D7C006199E4 /* Info.plist */,
+			);
+			path = StickeyMeTests;
+			sourceTree = "<group>";
+		};
+		9199199492E633FE0E2ABBB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87D9A911CDAC797440CAA713 /* Pods-StickeyMe.debug.xcconfig */,
+				9FB224996842D51999327111 /* Pods-StickeyMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		917D91611C806D7B006199E4 /* StickeyMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917D917F1C806D7C006199E4 /* Build configuration list for PBXNativeTarget "StickeyMe" */;
+			buildPhases = (
+				5E087B8411EFBBB0B3C71BF6 /* Check Pods Manifest.lock */,
+				917D915E1C806D7B006199E4 /* Sources */,
+				917D915F1C806D7B006199E4 /* Frameworks */,
+				917D91601C806D7B006199E4 /* Resources */,
+				BD3C97D28DA43F1EEC0164A5 /* Embed Pods Frameworks */,
+				5B24E98BB1974029875FF45F /* Copy Pods Resources */,
+				919EEF0F1CC719EB0045A524 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickeyMe;
+			productName = StickeyMe;
+			productReference = 917D91621C806D7B006199E4 /* StickeyMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		917D91751C806D7C006199E4 /* StickeyMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 917D91821C806D7C006199E4 /* Build configuration list for PBXNativeTarget "StickeyMeTests" */;
+			buildPhases = (
+				917D91721C806D7C006199E4 /* Sources */,
+				917D91731C806D7C006199E4 /* Frameworks */,
+				917D91741C806D7C006199E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				917D91781C806D7C006199E4 /* PBXTargetDependency */,
+			);
+			name = StickeyMeTests;
+			productName = StickeyMeTests;
+			productReference = 917D91761C806D7C006199E4 /* StickeyMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		917D915A1C806D7B006199E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jatin Arora";
+				TargetAttributes = {
+					917D91611C806D7B006199E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UYM8YWQ6RW;
+					};
+					917D91751C806D7C006199E4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 917D91611C806D7B006199E4;
+					};
+				};
+			};
+			buildConfigurationList = 917D915D1C806D7B006199E4 /* Build configuration list for PBXProject "StickeyMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 917D91591C806D7B006199E4;
+			productRefGroup = 917D91631C806D7B006199E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				917D91611C806D7B006199E4 /* StickeyMe */,
+				917D91751C806D7C006199E4 /* StickeyMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		917D91601C806D7B006199E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D8A1EA1CBF4AD500F7F8BB /* wooden.jpg in Resources */,
+				917D91701C806D7B006199E4 /* LaunchScreen.storyboard in Resources */,
+				917D916D1C806D7B006199E4 /* Assets.xcassets in Resources */,
+				917D916B1C806D7B006199E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917D91741C806D7C006199E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B24E98BB1974029875FF45F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StickeyMe/Pods-StickeyMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E087B8411EFBBB0B3C71BF6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		919EEF0F1CC719EB0045A524 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		BD3C97D28DA43F1EEC0164A5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StickeyMe/Pods-StickeyMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		917D915E1C806D7B006199E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C64E041CA18944003BCB79 /* DNCollectionViewCell.swift in Sources */,
+				917D91681C806D7B006199E4 /* ViewController.swift in Sources */,
+				912419631CB9374B008E4C61 /* SMImageViewController.swift in Sources */,
+				914A22A41C8585E0007FBD03 /* MBProgressHUD.m in Sources */,
+				914A22B41C870447007FBD03 /* CVWrapper.mm in Sources */,
+				91D8A1DE1CBE5F7500F7F8BB /* SMImageObject.swift in Sources */,
+				914A22C01C87089F007FBD03 /* CVSquares.cpp in Sources */,
+				914A22A71C85BE99007FBD03 /* UIImage+OpenCV.mm in Sources */,
+				917D91661C806D7B006199E4 /* AppDelegate.swift in Sources */,
+				91265C351CB0C02600AE7828 /* SMImageSelectionViewController.swift in Sources */,
+				9124195D1CB70B54008E4C61 /* SMImageFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917D91721C806D7C006199E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917D917B1C806D7C006199E4 /* StickeyMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		917D91781C806D7C006199E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 917D91611C806D7B006199E4 /* StickeyMe */;
+			targetProxy = 917D91771C806D7C006199E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		917D91691C806D7B006199E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				917D916A1C806D7B006199E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		917D916E1C806D7B006199E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				917D916F1C806D7B006199E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		917D917D1C806D7C006199E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jatin Arora (FWHGJC8VDW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jatin Arora (FWHGJC8VDW)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		917D917E1C806D7C006199E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jatin Arora (UYM8YWQ6RW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jatin Arora (UYM8YWQ6RW)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		917D91801C806D7C006199E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D9A911CDAC797440CAA713 /* Pods-StickeyMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = StickeyMe/PrefixHeader.pch;
+				INFOPLIST_FILE = StickeyMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jatinarora.StickyMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickeyMe/StickeyMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		917D91811C806D7C006199E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB224996842D51999327111 /* Pods-StickeyMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = StickeyMe/PrefixHeader.pch;
+				INFOPLIST_FILE = StickeyMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-v";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jatinarora.StickyMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickeyMe/StickeyMe-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		917D91831C806D7C006199E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StickeyMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jatin.StickeyMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickeyMe.app/StickeyMe";
+			};
+			name = Debug;
+		};
+		917D91841C806D7C006199E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StickeyMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jatin.StickeyMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickeyMe.app/StickeyMe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		917D915D1C806D7B006199E4 /* Build configuration list for PBXProject "StickeyMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917D917D1C806D7C006199E4 /* Debug */,
+				917D917E1C806D7C006199E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917D917F1C806D7C006199E4 /* Build configuration list for PBXNativeTarget "StickeyMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917D91801C806D7C006199E4 /* Debug */,
+				917D91811C806D7C006199E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		917D91821C806D7C006199E4 /* Build configuration list for PBXNativeTarget "StickeyMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				917D91831C806D7C006199E4 /* Debug */,
+				917D91841C806D7C006199E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 917D915A1C806D7B006199E4 /* Project object */;
+}
